@@ -30,6 +30,8 @@
                 gap: 1rem;
                 text-align: center;
                 font-size: 16px;
+                background-color: hsl(0, 100%, 74%);
+                background-image: url(../images/bg-intro-mobile.png);
             }
 
             main,
@@ -39,8 +41,8 @@
             }
 
             main {
-                background-color: hsl(0, 100%, 74%);
-                background-image: url(../images/bg-intro-mobile.png);
+                /* background-color: hsl(0, 100%, 74%);
+                background-image: url(../images/bg-intro-mobile.png); */
                 color: hsl(0, 100%, 100%);
                 gap: 3rem;
                 padding: 1rem;
@@ -132,8 +134,48 @@
     @media screen and (min-width: 401px) {
 
         /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 800px;
+                background-color: hsl(0, 100%, 74%);
+                background-image: url(../images/bg-intro-desktop.png);
+            }
+
+            main {
+                margin: auto;
+                width: 73%;
+                display: grid;
+                gap: 1rem;
+                grid-template-areas:
+                'top_ bottom_';
+            }
+
         /* CLASS */
+
+            .top h1,
+            .top p {
+                text-align: left;
+            }
+
+            .top h1 {
+                font-size: 2.8rem;
+            }
+
+            .top p {
+                padding: 0;
+            }
+
         /* ID */
+
+            #top {
+                justify-content: center;
+                grid-area: top_;
+            }
+
+            #bottom {
+                grid-area: bottom_;
+            }
 
     }
 
