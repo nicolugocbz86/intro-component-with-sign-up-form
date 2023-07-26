@@ -16,15 +16,20 @@
         <div id="bottom" class="bottom">
             <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
             <form>
-                <input type="text" name="" id="" placeholder="First Name">
-                <input type="text" name="" id="" placeholder="Last Name">
-                <input type="email" name="" id="" placeholder="Email Address">
-                <input type="password" name="" id="" placeholder="Password">
-                <input type="submit" value="Claim your free trial">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                <span class="span_alerts">First Name cannot be empty</span>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                <span class="span_alerts">Last Name cannot be empty</span>
+                <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <span class="span_alerts">Looks like this is not an email</span>
+                <input type="password" name="pass" id="pass" placeholder="Password" required>
+                <span class="span_alerts">Password cannot be empty</span>
+                <input id="input-submit" type="submit" value="Claim your free trial" required>
                 <p>By clicking the button, you are agreeing to our <span>Terms and Services</span</p>
             </form>
         </div>
     </main>
     <footer><p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/nicolugocbz86" target="_blank">Nicolas Lugo</a>.</p></footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

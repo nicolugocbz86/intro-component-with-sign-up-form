@@ -68,7 +68,7 @@
                 font-weight: 600;
             }
 
-            form input:nth-child(5) {
+            form input:nth-of-type(5) {
                 cursor: pointer;
                 border: none;
                 background-color: hsl(154, 59%, 51%);
@@ -79,7 +79,7 @@
                 box-shadow: 0 .1rem 0 .1rem hsl(154, 59%, 41%);
             }
 
-            form input:nth-child(5):active {
+            form input:nth-of-type(5):active {
                 background-color: hsl(154, 59%, 61%);
                 box-shadow: 0 .1rem 0 .1rem hsl(154, 59%, 51%);
             }
@@ -125,6 +125,19 @@
 
             .bottom p:nth-child(1) span {
                 font-weight: 600;
+            }
+
+            .inputs_alerts {
+                border-color: hsl(0, 100%, 74%);
+                color: hsl(0, 100%, 74%);
+            }
+
+            .span_alerts {
+                display: none;
+                font-size: .8rem;
+                font-style: italic;
+                text-align: right;
+                color: hsl(0, 100%, 74%);
             }
 
         /* ID */
